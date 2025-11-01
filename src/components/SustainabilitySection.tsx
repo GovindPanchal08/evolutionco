@@ -1,5 +1,5 @@
 import React from "react";
-import {DownloadIcon} from "lucide-react"
+import { DownloadIcon } from "lucide-react";
 const features = [
   { icon: "/icons/rainwater.svg", label: "Rainwater harvesting" },
   { icon: "/icons/solar.svg", label: "Solar facilities" },
@@ -30,10 +30,11 @@ const SustainabilitySection = () => (
     </div>
 
     <div className="flex justify-between gap-10 ">
-      <div className="img w-1/2 mt-4">
+      <div className="w-1/2 relative overflow-hidden bottom-10 rotate-y-180 h-[540px]">
+        <div className="absolute bottom-0 left-0  w-full h-[60%] bg-[#006767]"></div>
         <img
-          src="https://www.ogc.org/wp-content/uploads/2024/09/ricardo-gomez-angel-WsEAiVwGrwo-unsplash.jpg"
-          alt=""
+          src="/b95b2187610f14bf19ef419a87c4ae49eef9a753.png"
+          className="absolute  left-1/2 -translate-x-1/2 "
         />
       </div>
       <div className="w-[45%]">
@@ -65,7 +66,9 @@ const SustainabilitySection = () => (
             </div>
             <div className="flex justify-between items-center">
               <span className="text-sm mb-1">{c.label}</span>
-              <a href=""><DownloadIcon size={20}/></a>
+              <a href="">
+                <DownloadIcon size={20} />
+              </a>
             </div>
           </div>
         ))}
