@@ -24,6 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Gilda+Display&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Winky+Rough:ital,wght@0,500;1,500&display=swap');
+      </style>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

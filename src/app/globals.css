@@ -11,6 +11,46 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+.gilda-display-regular {
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Add this in globals.css */
+@keyframes slideBg {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0% 0%;
+  }
+}
+/* Add this in globals.css */
+@keyframes leftAnimate {
+  from {
+    background-position: 0% 100%;
+  }
+  to {
+    background-position: 50% 0%;
+  }
+}
+
+.bg-animate {
+  animation: slideBg 4s ease-out forwards;
+}
+.left-animate {
+  animation: leftAnimate 1s ease-out forwards;
+}
+.right-animate {
+  animation: leftAnimate 1s ease-out forwards;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
