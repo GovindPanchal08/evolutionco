@@ -1,5 +1,5 @@
 import React from "react";
-
+import {DownloadIcon} from "lucide-react"
 const features = [
   { icon: "/icons/rainwater.svg", label: "Rainwater harvesting" },
   { icon: "/icons/solar.svg", label: "Solar facilities" },
@@ -63,7 +63,10 @@ const SustainabilitySection = () => (
               </span>
               <span className="text-xs text-gray-500">{c.year}</span>
             </div>
-            <span className="text-sm mb-1">{c.label}</span>
+            <div className="flex justify-between items-center">
+              <span className="text-sm mb-1">{c.label}</span>
+              <a href=""><DownloadIcon size={20}/></a>
+            </div>
           </div>
         ))}
       </div>
